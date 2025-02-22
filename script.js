@@ -9,7 +9,7 @@ Car.prototype.getMakeModel = function(){
 
 function SportsCar(make, model, topSpeed) {
 	Car.call(this,make,model);
-	this.toSpeed = topSpeed;
+	this.topSpeed = topSpeed;
 }
 SportsCar.prototype = Object.create(Car.prototype);
 SportsCar.prototype.constructor = SportsCar;
